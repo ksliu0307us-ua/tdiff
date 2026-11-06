@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tdiff"
+version = "0.1.0"
+description = "A diff tool with word highlighting, side-by-side view, and patch apply"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Kevin Liu"}]
+
+[project.scripts]
+tdiff = "tdiff.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tdiff*"]
